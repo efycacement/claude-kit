@@ -1,7 +1,12 @@
 {
   "name": "claude-kit",
-  "owner": { "name": "johnnyvizz", "url": "https://github.com/johnnyvizz" },
-  "metadata": { "description": "johnnyvizz's public Claude Code skills and mods." },
+  "owner": {
+    "name": "johnnyvizz",
+    "url": "https://github.com/johnnyvizz"
+  },
+  "metadata": {
+    "description": "johnnyvizz's public Claude Code skills and mods."
+  },
   "plugins": [
     {
       "name": "savvy-flow",
@@ -16,6 +21,132 @@
       "description": "Mod: progress bar above the prompt and a live agents panel; made for savvy-flow, shows any subagents.",
       "version": "1.2.0",
       "category": "mod"
+    },
+    {
+      "name": "agency-academic",
+      "source": "./plugins/agency-academic",
+      "description": "Agents: The Agency's Academic division, 6 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-design",
+      "source": "./plugins/agency-design",
+      "description": "Agents: The Agency's Design division, 10 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-engineering",
+      "source": "./plugins/agency-engineering",
+      "description": "Agents: The Agency's Engineering division, 66 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-finance",
+      "source": "./plugins/agency-finance",
+      "description": "Agents: The Agency's Finance division, 5 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-game-development",
+      "source": "./plugins/agency-game-development",
+      "description": "Agents: The Agency's Game Development division, 21 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-gis",
+      "source": "./plugins/agency-gis",
+      "description": "Agents: The Agency's GIS division, 13 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-healthcare",
+      "source": "./plugins/agency-healthcare",
+      "description": "Agents: The Agency's Healthcare division, 3 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-marketing",
+      "source": "./plugins/agency-marketing",
+      "description": "Agents: The Agency's Marketing division, 37 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-paid-media",
+      "source": "./plugins/agency-paid-media",
+      "description": "Agents: The Agency's Paid Media division, 7 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-product",
+      "source": "./plugins/agency-product",
+      "description": "Agents: The Agency's Product division, 6 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-project-management",
+      "source": "./plugins/agency-project-management",
+      "description": "Agents: The Agency's Project Management division, 7 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-research",
+      "source": "./plugins/agency-research",
+      "description": "Agents: The Agency's Research division, 1 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-sales",
+      "source": "./plugins/agency-sales",
+      "description": "Agents: The Agency's Sales division, 9 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-security",
+      "source": "./plugins/agency-security",
+      "description": "Agents: The Agency's Security division, 12 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-spatial-computing",
+      "source": "./plugins/agency-spatial-computing",
+      "description": "Agents: The Agency's Spatial Computing division, 6 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-specialized",
+      "source": "./plugins/agency-specialized",
+      "description": "Agents: The Agency's Specialized division, 59 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-support",
+      "source": "./plugins/agency-support",
+      "description": "Agents: The Agency's Support division, 6 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
+    },
+    {
+      "name": "agency-testing",
+      "source": "./plugins/agency-testing",
+      "description": "Agents: The Agency's Testing division, 9 specialist subagents.",
+      "version": "2026.11.8",
+      "category": "agents"
     }
   ]
 }

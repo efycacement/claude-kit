@@ -1,0 +1,18 @@
+{
+  "name": "agency-marketing",
+  "version": "2026.11.8",
+  "description": "Agents: The Agency's Marketing division, 37 specialist subagents.",
+  "author": {
+    "name": "msitarzewski and The Agency contributors",
+    "url": "https://github.com/msitarzewski/agency-agents"
+  },
+  "homepage": "https://github.com/msitarzewski/agency-agents/tree/main/marketing",
+  "repository": "https://github.com/efycacement/claude-kit",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "subagents",
+    "the-agency",
+    "marketing"
+  ]
+}

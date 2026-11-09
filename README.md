@@ -9,6 +9,45 @@ My public skills and mods for [Claude Code](https://claude.com/claude-code), in 
 
 savvy-flow and savvy-progress work on their own and light up together: with both installed, the flow drives the bar and workers report their progress to the panel.
 
+### The Agency
+
+The `agency-*` plugins package [The Agency](https://github.com/msitarzewski/agency-agents) (MIT), a roster of specialist subagent personas, one plugin per division. It is the same roster the Agency Agents desktop app (`brew install --cask msitarzewski/agency-agents/agency-agents`) installs, usable here through the plugin system and in cloud sessions, where that macOS app cannot run.
+
+Every installed agent adds its description to each session's context, so install the divisions you use rather than all of them. Each plugin's README lists its agents.
+
+<!-- agency:start -->
+| Plugin | Division | Agents |
+| --- | --- | --- |
+| [agency-academic](plugins/agency-academic) | Academic | 6 |
+| [agency-design](plugins/agency-design) | Design | 10 |
+| [agency-engineering](plugins/agency-engineering) | Engineering | 66 |
+| [agency-finance](plugins/agency-finance) | Finance | 5 |
+| [agency-game-development](plugins/agency-game-development) | Game Development | 21 |
+| [agency-gis](plugins/agency-gis) | GIS | 13 |
+| [agency-healthcare](plugins/agency-healthcare) | Healthcare | 3 |
+| [agency-marketing](plugins/agency-marketing) | Marketing | 37 |
+| [agency-paid-media](plugins/agency-paid-media) | Paid Media | 7 |
+| [agency-product](plugins/agency-product) | Product | 6 |
+| [agency-project-management](plugins/agency-project-management) | Project Management | 7 |
+| [agency-research](plugins/agency-research) | Research | 1 |
+| [agency-sales](plugins/agency-sales) | Sales | 9 |
+| [agency-security](plugins/agency-security) | Security | 12 |
+| [agency-spatial-computing](plugins/agency-spatial-computing) | Spatial Computing | 6 |
+| [agency-specialized](plugins/agency-specialized) | Specialized | 59 |
+| [agency-support](plugins/agency-support) | Support | 6 |
+| [agency-testing](plugins/agency-testing) | Testing | 9 |
+<!-- agency:end -->
+
+These plugins live in this fork, so add it as the marketplace:
+
+```
+/plugin marketplace add efycacement/claude-kit
+/plugin install agency-marketing@claude-kit
+/plugin install agency-paid-media@claude-kit
+```
+
+`python3 scripts/sync_agency_agents.py` pulls the latest upstream agents and regenerates the plugins, their marketplace entries and the table above.
+
 ## Install
 
 ### From the marketplace
@@ -70,6 +109,7 @@ plugins/<name>/
   hooks/hooks.json                a mod: points at the hooks module
   hooks/register.tsx              a mod: the module itself
   types/index.d.ts                a mod: its $.state contract
+scripts/sync_agency_agents.py     regenerates the agency-* plugins from upstream
 ```
 
 Check a plugin before publishing: `claude plugin validate plugins/<name>`, and the catalog with `claude plugin validate .`.
